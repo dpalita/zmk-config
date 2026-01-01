@@ -10,11 +10,8 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define DEFAULT 0
-#define GAME 1
-#define NUM 2
-#define NAV 3
-#define FUN 4
-#define CMD 5
+#define NUM 1
+#define NAV 2
 
 # define ______ &trans
 
