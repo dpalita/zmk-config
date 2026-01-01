@@ -13,11 +13,12 @@
 
         colemak {
             bindings = <
-&kp Q  &kp W  &kp L  &kp P      &kp B    &kp J    &kp L     &kp U      &kp Y    &kp SQT
-&kp A  &kp S  &kp R  &kp T      &kp G    &kp M    &kp N     &kp E      &kp I    &kp O
-&kp Z  &kp X  &kp C  &kp D      &kp V    &kp K    &kp H     &kp COMMA  &kp DOT  &kp COLON
-              &mo 1  &kp SPACE  &kp RET  &kp RET  &kp BSPC  &trans
+&kp Q        &kp W           &kp L             &kp P        &kp B    &kp J    &kp F            &kp U              &kp Y            &kp SQT
+&mt LCTRL A  &mt LEFT_ALT S  &mt LEFT_SHIFT R  &mt LCMD T   &kp G    &kp M    &mt RCMD N       &mt RIGHT_SHIFT E  &mt RIGHT_ALT I  &mt RIGHT_CONTROL O
+&kp Z        &kp X           &kp C             &kp D        &kp V    &kp K    &kp H            &kp COMMA          &kp DOT          &kp COLON
+                             &mo 1             &lt 1 SPACE  &kp TAB  &kp RET  &lt 2 BACKSPACE  &mo 2
             >;
+
             display-name = "colemak";
         };
 
@@ -28,7 +29,17 @@
 &kp LCTRL  &kp PIPE  &kp AMPS        &kp DLLR  &kp EXCL        &kp PERCENT  &kp N1  &kp N2  &kp N3  &kp EQUAL
                      &trans          &trans    &trans          &trans       &trans  &kp N0
             >;
+
             display-name = "symbols";
+        };
+
+        navigation {
+            bindings = <
+&trans  &trans  &kp C_VOLUME_UP  &kp C_MUTE  &trans  &trans  &trans    &trans    &trans  &trans
+&trans  &trans  &kp C_VOL_DN     &kp ESC     &trans  &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
+&trans  &trans  &trans           &trans      &trans  &trans  &trans    &trans    &trans  &trans
+                &trans           &trans      &trans  &trans  &trans    &trans
+            >;
         };
     };
 };
