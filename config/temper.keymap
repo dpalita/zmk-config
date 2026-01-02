@@ -12,13 +12,9 @@
 # define SYMBOLS 1
 # define NAVIGATION 2
 
-&mt {
-    flavor = "balanced";
-};
+&mt { flavor = "balanced"; };
 
-&lt {
-    flavor = "balanced";
-};
+&lt { flavor = "balanced"; };
 
 / {
     keymap {
@@ -26,10 +22,10 @@
 
         colemak {
             bindings = <
-&kp Q        &kp W           &kp L             &kp P        &kp B    &kp J    &kp F            &kp U              &kp Y            &kp SQT
+&kp Q        &kp W           &kp L             &kp P        &kp B    &kp J    &kp F            &kp U              &kp Y            &kp SINGLE_QUOTE
 &mt LCTRL A  &mt LEFT_ALT S  &mt LEFT_SHIFT R  &mt LCMD T   &kp G    &kp M    &mt RCMD N       &mt RIGHT_SHIFT E  &mt RIGHT_ALT I  &mt RIGHT_CONTROL O
 &kp Z        &kp X           &kp C             &kp D        &kp V    &kp K    &kp H            &kp COMMA          &kp DOT          &kp COLON
-                             &mo SYMBOLS       &lt 1 SPACE  &kp TAB  &kp RET  &lt 2 BACKSPACE  &mo NAVIGATION
+                             &caps_word        &lt 1 SPACE  &kp TAB  &kp RET  &lt 2 BACKSPACE  &mo NAVIGATION
             >;
 
             display-name = "colemak";
@@ -39,7 +35,7 @@
             bindings = <
 &kp SEMI                    &kp AT                          &kp POUND                   &kp DQT                                 &kp UNDERSCORE       &kp MINUS    &kp N7  &kp N8  &kp N9  &kp FSLH
 &mt GREATER_THAN LESS_THAN  &mt RIGHT_BRACKET LEFT_BRACKET  &mt RIGHT_BRACE LEFT_BRACE  &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt BACKSLASH SLASH  &kp PLUS     &kp N4  &kp N5  &kp N6  &kp STAR
-&kp LCTRL                   &kp PIPE                        &kp AMPS                    &kp DLLR                                &kp EXCL             &kp PERCENT  &kp N1  &kp N2  &kp N3  &kp EQUAL
+&kp CARET                   &kp PIPE                        &kp AMPS                    &kp DLLR                                &kp EXCL             &kp PERCENT  &kp N1  &kp N2  &kp N3  &kp EQUAL
                                                             &trans                      &trans                                  &trans               &trans       &trans  &kp N0
             >;
 
