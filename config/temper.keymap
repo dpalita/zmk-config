@@ -20,23 +20,24 @@
     keymap {
         compatible = "zmk,keymap";
 
-        colemak {
+        base {
             bindings = <
-&kp Q        &kp W           &kp L             &kp P        &kp B    &kp J    &kp F            &kp U              &kp Y            &kp SINGLE_QUOTE
-&mt LCTRL A  &mt LEFT_ALT S  &mt LEFT_SHIFT R  &mt LCMD T   &kp G    &kp M    &mt RCMD N       &mt RIGHT_SHIFT E  &mt RIGHT_ALT I  &mt RIGHT_CONTROL O
-&kp Z        &kp X           &kp C             &kp D        &kp V    &kp K    &kp H            &kp COMMA          &kp DOT          &kp COLON
-                             &caps_word        &lt 1 SPACE  &kp TAB  &kp RET  &lt 2 BACKSPACE  &mo NAVIGATION
+&kp Q        &kp W           &kp L             &kp P        &kp B      &kp J    &kp F            &kp U              &kp Y            &kp SINGLE_QUOTE
+&mt LCTRL A  &mt LEFT_ALT S  &mt LEFT_SHIFT R  &mt LCMD T   &kp G      &kp M    &mt RCMD N       &mt RIGHT_SHIFT E  &mt RIGHT_ALT I  &mt RIGHT_CONTROL O
+&kp Z        &kp X           &kp C             &kp D        &kp V      &kp K    &kp H            &kp COMMA          &kp DOT          &kp COLON
+                             &kp ESCAPE        &lt 1 SPACE  &kp TAB    &kp RET  &lt 2 BACKSPACE  &mt LG(V) LG(C)
             >;
 
             display-name = "colemak";
+            label = "base";
         };
 
         symbols {
             bindings = <
-&kp SEMI                    &kp AT                          &kp POUND                   &kp DQT                                 &kp UNDERSCORE       &kp MINUS    &kp N7  &kp N8  &kp N9  &kp FSLH
-&mt GREATER_THAN LESS_THAN  &mt RIGHT_BRACKET LEFT_BRACKET  &mt RIGHT_BRACE LEFT_BRACE  &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt BACKSLASH SLASH  &kp PLUS     &kp N4  &kp N5  &kp N6  &kp STAR
-&kp CARET                   &kp PIPE                        &kp AMPS                    &kp DLLR                                &kp EXCL             &kp PERCENT  &kp N1  &kp N2  &kp N3  &kp EQUAL
-                                                            &trans                      &trans                                  &trans               &trans       &trans  &kp N0
+&kp SEMI                    &kp AT                          &kp POUND                   &kp DQT                                 &kp UNDERSCORE         &kp MINUS    &kp N7  &kp N8  &kp N9  &kp FSLH
+&mt GREATER_THAN LESS_THAN  &mt RIGHT_BRACKET LEFT_BRACKET  &mt RIGHT_BRACE LEFT_BRACE  &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt BACKSLASH SLASH    &kp PLUS     &kp N4  &kp N5  &kp N6  &kp STAR
+&kp CARET                   &kp PIPE                        &kp AMPS                    &kp DLLR                                &kp EXCL               &kp PERCENT  &kp N1  &kp N2  &kp N3  &kp EQUAL
+                                                            &trans                      &trans                                  &trans                 &trans       &trans  &kp N0
             >;
 
             display-name = "symbols";
@@ -44,11 +45,13 @@
 
         navigation {
             bindings = <
-&bt BT_NXT      &trans  &kp C_VOLUME_UP  &kp C_MUTE  &trans  &kt LG(BACKSPACE)  &kt LG(LEFT_ARROW)  &kt LA(LEFT_ARROW)  &kt LA(RIGHT_ARROW)  &kt LG(RIGHT_ARROW)
-&bootloader     &trans  &kp C_VOL_DN     &kp ESC     &trans  &kt LA(BACKSPACE)  &kp LEFT            &kp DOWN            &kp UP               &kp RIGHT
-&studio_unlock  &trans  &trans           &trans      &trans  &trans             &trans              &trans              &trans               &trans
-                        &trans           &trans      &trans  &trans             &trans              &trans
+&bt BT_NXT      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE  &trans    &trans      &kp LG(LEFT_ARROW)  &kp PAGE_UP  &kp PAGE_DOWN  &kp LG(RIGHT_ARROW)
+&bootloader     &trans             &trans           &trans      &trans    &caps_word  &kp LEFT            &kp DOWN     &kp UP         &kp RIGHT
+&studio_unlock  &trans             &trans           &trans      &trans    &trans      &trans              &trans       &trans         &trans
+                                   &trans           &trans      &trans    &trans      &trans              &trans
             >;
+
+            label = "navigation";
         };
     };
 };
