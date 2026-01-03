@@ -17,7 +17,6 @@
 &lt { flavor = "balanced"; };
 
 / {
-
     behaviors {
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
@@ -27,9 +26,11 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = < J F U Y M N E I O K H >; // List of keys on the right side of the keyboard
             hold-trigger-on-release;
         };
+
         hmr: home_row_mod_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -38,6 +39,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = < Q W L P B A S R T G Z X C D V >; // List of keys on the left side of the keyboard
             hold-trigger-on-release;
         };
@@ -48,10 +50,10 @@
 
         base {
             bindings = <
-&kp Q        &kp W           &kp L             &kp P        &kp B      &kp J    &kp F            &kp U              &kp Y            &kp SQT
-&hml(A)      &hml(S)         &hml(R)           &hml(T)      &kp G      &kp M    &hmr(N)          &hmr(E)            &hmr(I)          &hmr(O)
-&kp Z        &kp X           &kp C             &kp D        &kp V      &kp K    &kp H            &kp COMMA          &kp DOT          &kp COLON
-                             &kp ESC           &lt 1 SPACE  &kp TAB    &kp RET  &lt 2 BSPC       &mt LG(C) LG(V)
+&kp Q         &kp W        &kp L         &kp P        &kp B      &kp J    &kp F        &kp U            &kp Y        &kp SQT
+&hml LCTRL A  &hml LALT S  &hml LSHFT R  &hml LCMD T  &kp G      &kp M    &hmr RCMD N  &hmr RSHFT E     &hmr RALT I  &hmr RCTRL O
+&kp Z         &kp X        &kp C         &kp D        &kp V      &kp K    &kp H        &kp COMMA        &kp DOT      &kp COLON
+                           &kp ESC       &lt 1 SPACE  &kp TAB    &kp RET  &lt 2 BSPC   &mt LG(C) LG(V)
             >;
 
             display-name = "base";
@@ -60,10 +62,10 @@
 
         symbols {
             bindings = <
-&kp SEMI                    &kp AT                          &kp HASH                    &kp DQT                                 &kp UNDERSCORE         &kp MINUS    &kp N7  &kp N8  &kp N9  &kp FSLH
-&mt GT LT                   &mt RBKT LBKT                   &mt RBRC LBRC               &mt RPAR LPAR                           &mt BSLH SLASH         &kp PLUS     &kp N4  &kp N5  &kp N6  &kp STAR
-&kp CARET                   &kp PIPE                        &kp AMPS                    &kp DOLLAR                              &kp EXCL               &kp PRCNT    &kp N1  &kp N2  &kp N3  &kp EQUAL
-                                                            &trans                      &trans                                  &trans                 &trans       &trans  &kp N0
+&kp SEMI   &kp AT         &kp HASH       &kp DQT        &kp UNDERSCORE    &kp MINUS  &kp N7  &kp N8  &kp N9  &kp FSLH
+&mt GT LT  &mt RBKT LBKT  &mt RBRC LBRC  &mt RPAR LPAR  &mt BSLH SLASH    &kp PLUS   &kp N4  &kp N5  &kp N6  &kp STAR
+&kp CARET  &kp PIPE       &kp AMPS       &kp DOLLAR     &kp EXCL          &kp PRCNT  &kp N1  &kp N2  &kp N3  &kp EQUAL
+                          &trans         &trans         &trans            &trans     &trans  &kp N0
             >;
 
             display-name = "symbols";
@@ -72,10 +74,10 @@
 
         navigation {
             bindings = <
-&bt BT_NXT      &kp C_VOL_DN       &kp C_VOL_UP     &kp C_MUTE  &trans    &trans      &kp LG(LEFT)        &kp PAGE_UP  &kp PAGE_DOWN  &kp LG(RIGHT)
-&bootloader     &trans             &trans           &trans      &trans    &caps_word  &kp LEFT            &kp DOWN     &kp UP         &kp RIGHT
-&studio_unlock  &trans             &trans           &trans      &trans    &trans      &trans              &trans       &trans         &trans
-                                   &trans           &trans      &trans    &trans      &trans              &trans
+&bt BT_NXT      &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &trans    &trans      &kp LG(LEFT)  &kp PAGE_UP  &kp PAGE_DOWN  &kp LG(RIGHT)
+&bootloader     &trans        &trans        &trans      &trans    &caps_word  &kp LEFT      &kp DOWN     &kp UP         &kp RIGHT
+&studio_unlock  &trans        &trans        &trans      &trans    &trans      &trans        &trans       &trans         &trans
+                              &trans        &trans      &trans    &trans      &trans        &trans
             >;
 
             display-name = "navigation";
