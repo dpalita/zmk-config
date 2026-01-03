@@ -10,9 +10,9 @@ manifest:
   - name: zmk
     remote: zmkfirmware
     import: app/west.yml
-  - name: temper-zmk-config
-    url: https://github.com/raeedcho/temper-zmk-config
-    revision: main
-    path: modules/temper-zmk-config
+  # - name: temper-zmk-config
+  #   url: https://github.com/raeedcho/temper-zmk-config
+  #   revision: main
+  #   path: modules/temper-zmk-config
   self:
     path: config
