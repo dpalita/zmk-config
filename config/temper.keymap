@@ -27,7 +27,7 @@
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = < J F U Y M N E I O K H >; // List of keys on the right side of the keyboard
+            hold-trigger-key-positions = < J F U Y M N E I O K H SPACE TAB RET BSPC>; // List of keys on the right side of the keyboard
             hold-trigger-on-release;
         };
 
@@ -40,7 +40,7 @@
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = < Q W L P B A S R T G Z X C D V >; // List of keys on the left side of the keyboard
+            hold-trigger-key-positions = < Q W L P B A S R T G Z X C D V SPACE TAB RET BSPC>; // List of keys on the left side of the keyboard
             hold-trigger-on-release;
         };
     };
@@ -74,8 +74,8 @@
 
         navigation {
             bindings = <
-&bt BT_NXT      &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &trans    &trans      &kp LG(LEFT)  &kp PAGE_UP  &kp PAGE_DOWN  &kp LG(RIGHT)
-&bootloader     &trans        &trans        &trans      &trans    &caps_word  &kp LEFT      &kp DOWN     &kp UP         &kp RIGHT
+&bt BT_NXT      &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &trans    &none      &kp LG(LEFT)  &kp PAGE_UP  &kp PAGE_DOWN  &kp LG(RIGHT)
+&bootloader     &trans        &trans        &trans      &trans    &none  &kp LEFT      &kp DOWN     &kp UP         &kp RIGHT
 &studio_unlock  &trans        &trans        &trans      &trans    &trans      &trans        &trans       &trans         &trans
                               &trans        &trans      &trans    &trans      &trans        &trans
             >;
