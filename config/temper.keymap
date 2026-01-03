@@ -49,8 +49,14 @@
         e_acute: e_acute {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SQT &kp E>;
+            bindings = <&kp RALT &kp E>;
             label = "E_ACUTE";
+        };
+        e_acute2: e_acute2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RALT &kp E &kp E>;
+            label = "E_ACUTE2";
         };
     };
 
@@ -85,7 +91,7 @@
             bindings = <
 &bt BT_NXT      &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &trans    &none   &kp LG(LEFT)  &kp PAGE_UP  &kp PAGE_DOWN  &kp LG(RIGHT)
 &bootloader     &trans        &trans        &trans      &trans    &none   &kp LEFT      &kp DOWN     &kp UP         &kp RIGHT
-&studio_unlock  &trans        &trans        &trans      &trans    &trans  &e_acute      &trans       &trans         &trans
+&studio_unlock  &trans        &trans        &trans      &trans    &trans  &e_acute      &e_acute2    &trans         &trans
                               &trans        &trans      &trans    &trans  &trans        &trans
             >;
 
