@@ -45,6 +45,15 @@
         };
     };
 
+    macros {
+        e_acute: e_acute {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp E>;
+            label = "E_ACUTE";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -74,14 +83,25 @@
 
         navigation {
             bindings = <
-&bt BT_NXT      &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &trans    &none      &kp LG(LEFT)  &kp PAGE_UP  &kp PAGE_DOWN  &kp LG(RIGHT)
-&bootloader     &trans        &trans        &trans      &trans    &none  &kp LEFT      &kp DOWN     &kp UP         &kp RIGHT
-&studio_unlock  &trans        &trans        &trans      &trans    &trans      &trans        &trans       &trans         &trans
-                              &trans        &trans      &trans    &trans      &trans        &trans
+&bt BT_NXT      &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &trans    &none   &kp LG(LEFT)  &kp PAGE_UP  &kp PAGE_DOWN  &kp LG(RIGHT)
+&bootloader     &trans        &trans        &trans      &trans    &none   &kp LEFT      &kp DOWN     &kp UP         &kp RIGHT
+&studio_unlock  &trans        &trans        &trans      &trans    &trans  &e_acute      &trans       &trans         &trans
+                              &trans        &trans      &trans    &trans  &trans        &trans
             >;
 
             display-name = "navigation";
             label = "navigation";
+        };
+
+        accents {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "accents";
         };
     };
 };
