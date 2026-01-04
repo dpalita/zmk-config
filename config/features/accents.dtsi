@@ -49,7 +49,7 @@
             keep-mods = <(MOD_LSFT|MOD_RSFT)>; \
         };
 
-    #define MACRO_HOLD_TAP(NAME, HOLD_MACRO, TAP_MACRO) \    
+    #define MACRO_HOLD_TAP(NAME, HOLD_MACRO, TAP_MACRO) \
       ht_##NAME: ht_##NAME { \
         compatible = "zmk,behavior-hold-tap"; \
         #binding-cells = <0>; \
