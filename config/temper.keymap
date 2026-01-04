@@ -54,7 +54,7 @@
         accents {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &ac_ugrv  &trans  &trans
-&ac_agrv  &trans  &trans  &trans  &trans    &trans  &ac_ntil  &mt &ac_egrv &ac_eacu  &trans  &trans
+&ac_agrv  &trans  &trans  &trans  &trans    &trans  &ac_ntil  &mmt &ac_egrv &ac_eacu  &trans  &trans
 &trans  &trans  &ac_ccdi  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans    &trans  &trans  &trans
             >;
