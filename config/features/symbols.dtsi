@@ -41,3 +41,4 @@
             bindings = <&macro_tap &kp TILDE &kp SPACE>;
         };
     };
+};
