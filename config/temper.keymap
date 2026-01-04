@@ -54,7 +54,7 @@
         accents {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &ac_ugrv  &trans  &trans
-&ac_agrv  &trans  &trans  &trans  &trans    &trans  &ac_ntil  &mmt 0 0  &trans  &trans
+&ac_agrv  &trans  &trans  &trans  &trans    &trans  &ac_ntil  &ht_eacugrv  &trans  &trans
 &trans  &trans  &ac_ccdi  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans    &trans  &trans  &trans
             >;
@@ -65,7 +65,7 @@
         circ {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &ac_ucir  &trans  &trans
-&ac_acir  &trans  &trans  &trans  &trans    &trans  &trans  &ac_ecir  &ac_icir  &ac_ocir
+&ac_acir  &trans  &trans  &trans  &trans    &trans  &trans  &ht_ecirtre  &ac_icir  &ac_ocir
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans    &trans  &trans  &trans
             >;
