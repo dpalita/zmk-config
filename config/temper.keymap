@@ -1,37 +1,17 @@
-/*
- * Copyright (c) 2020 The ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- */
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-# define BASE 0
-# define SYMBOLS 1
-# define NAVIGATION 2
-# define ACCENTS 3
+#define BASE 0
+#define SYMBOLS 1
+#define NAVIGATION 2
+#define ACCENTS 3
+#define CIRC 4
 
 #include "features/behaviors.dtsi"
 #include "features/accents.dtsi"
 
 / {
-    macros {
-        e_acute: e_acute {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RALT &kp E>;
-            label = "E_ACUTE";
-        };
-        e_acute2: e_acute2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RALT &kp E &kp E>;
-            label = "E_ACUTE2";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -40,7 +20,7 @@
 &kp Q         &kp W        &kp L         &kp P        &kp B      &kp J    &kp F        &kp U            &kp Y        &kp SQT
 &hml LCTRL A  &hml LALT S  &hml LSHFT R  &hml LCMD T  &kp G      &kp M    &hmr RCMD N  &hmr RSHFT E     &hmr RALT I  &hmr RCTRL O
 &kp Z         &kp X        &kp C         &kp D        &kp V      &kp K    &kp H        &kp COMMA        &kp DOT      &kp COLON
-                           &lt ACCENTS ESC       &lt SYMBOLS SPACE  &kp TAB    &kp RET  &lt NAVIGATION BSPC   &mt LG(C) LG(V)
+                           &lt ACCENTS ESC       &lt SYMBOLS SPACE  &kp TAB    &kp RET  &lt NAVIGATION BSPC   &mo CIRC
             >;
 
             display-name = "base";
@@ -63,7 +43,7 @@
             bindings = <
 &bt BT_NXT      &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &trans    &none   &kp LG(LEFT)  &kp PAGE_UP  &kp PAGE_DOWN  &kp LG(RIGHT)
 &bootloader     &trans        &trans        &trans      &trans    &none   &kp LEFT      &kp DOWN     &kp UP         &kp RIGHT
-&studio_unlock  &trans        &trans        &trans      &trans    &trans  &e_acute      &e_acute2    &trans         &trans
+&studio_unlock  &trans        &trans        &trans      &trans    &trans  &trans      &trans    &trans         &trans
                               &trans        &trans      &trans    &trans  &trans        &trans
             >;
 
@@ -71,22 +51,22 @@
             label = "navigation";
         };
 
-        acute_grave {
+        accents {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &ac_uacu  &trans  &trans
-&ac_agrv  &trans  &trans  &trans  &trans    &trans  &trans  &mt &ac_egrv &ac_eacu  &ac_egrv  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &ac_ugrv  &trans  &trans
+&ac_agrv  &trans  &trans  &trans  &trans    &trans  &ac_ntil  &mt &ac_egrv &ac_eacu  &trans  &trans
 &trans  &trans  &ac_ccdi  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans    &trans  &trans  &trans
             >;
 
-            label = "Acute - Grave";
+            label = "Accents";
         };
 
         circ {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &ac_ugrv  &trans  &trans
-&ac_agrv  &trans  &trans  &trans  &trans    &trans  &trans  &mt &ac_egrv &ac_eacu  &ac_egrv  &trans
-&trans  &trans  &ac_ccdi  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &ac_ucir  &trans  &trans
+&ac_acir  &trans  &trans  &trans  &trans    &trans  &trans  &ac_ecir  &ac_icir  &ac_ocir
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans    &trans  &trans  &trans
             >;
 
