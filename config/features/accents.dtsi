@@ -72,8 +72,8 @@
         ACCENTED_KEY(ugrv, "ú", "Ú", "úÚ", U, GRAVE)
         ACCENTED_KEY(ucir, "û", "Û", "ûÛ", U, I)
 
-        MACRO_HOLD_TAP(eacugrv, "ac_eacu", "ac_egrv")
-        MACRO_HOLD_TAP(ecirtre, "ac_ecir", "ac_etre")
+        MACRO_HOLD_TAP(eacugrv, ac_eacu, ac_egrv)
+        MACRO_HOLD_TAP(ecirtre, ac_ecir, ac_etre)
 
         ac_ccdi: ac_ccdi {
             wait-ms = <0>;
