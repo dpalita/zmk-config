@@ -11,6 +11,7 @@
 # define BASE 0
 # define SYMBOLS 1
 # define NAVIGATION 2
+# define ACCENTS 3
 
 #include "features/behaviors.dtsi"
 #include "features/accents.dtsi"
@@ -39,7 +40,7 @@
 &kp Q         &kp W        &kp L         &kp P        &kp B      &kp J    &kp F        &kp U            &kp Y        &kp SQT
 &hml LCTRL A  &hml LALT S  &hml LSHFT R  &hml LCMD T  &kp G      &kp M    &hmr RCMD N  &hmr RSHFT E     &hmr RALT I  &hmr RCTRL O
 &kp Z         &kp X        &kp C         &kp D        &kp V      &kp K    &kp H        &kp COMMA        &kp DOT      &kp COLON
-                           &kp ESC       &lt 1 SPACE  &kp TAB    &kp RET  &lt 2 BSPC   &mt LG(C) LG(V)
+                           &lt ACCENTS ESC       &lt SYMBOLS SPACE  &kp TAB    &kp RET  &lt NAVIGATION BSPC   &mt LG(C) LG(V)
             >;
 
             display-name = "base";
