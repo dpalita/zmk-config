@@ -49,13 +49,13 @@
             keep-mods = <(MOD_LSFT|MOD_RSFT)>; \
         };
 
-    #define MACRO_HOLD_TAP(name, hold_macro, tap_macro) \    
+    #define MACRO_HOLD_TAP(NAME, HOLD_MACRO, TAP_MACRO) \    
       ht_##NAME: ht_##NAME { \
         compatible = "zmk,behavior-hold-tap"; \
         #binding-cells = <0>; \
         flavor= "tap-preferred"; \
         tapping-term-ms = <150>; \
-        bindings = <&hold_macro>, <&tap_macro>; \
+        bindings = <&##HOLD_MACRO>, <&##TAP_MACRO>; \
       };
 
     accents {
@@ -72,8 +72,8 @@
         ACCENTED_KEY(ugrv, "ú", "Ú", "úÚ", U, GRAVE)
         ACCENTED_KEY(ucir, "û", "Û", "ûÛ", U, I)
 
-        MACRO_HOLD_TAP(eacugrv, ac_eacu, ac_egrv)
-        MACRO_HOLD_TAP(ecirtre, ac_ecir, ac_etre)
+        MACRO_HOLD_TAP(eacugrv, "ac_eacu", "ac_egrv")
+        MACRO_HOLD_TAP(ecirtre, "ac_ecir", "ac_etre")
 
         ac_ccdi: ac_ccdi {
             wait-ms = <0>;
