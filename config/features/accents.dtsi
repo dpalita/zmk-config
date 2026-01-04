@@ -55,7 +55,7 @@
         #binding-cells = <0>; \
         flavor= "tap-preferred"; \
         tapping-term-ms = <150>; \
-        bindings = <&##HOLD_MACRO>, <&##TAP_MACRO>; \
+        bindings = <&HOLD_MACRO>, <&TAP_MACRO>; \
       };
 
     accents {
