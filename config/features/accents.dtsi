@@ -51,17 +51,17 @@
 
     accents {
         ACCENTED_KEY(agrv, "à", "À", "àÀ", A, GRAVE)
-        ACCENTED_KEY(aacu, "á", "Á", "áÁ", A, E)
-        ACCENTED_KEY(atil, "ã", "Ã", "ãÃ", A, N)
         ACCENTED_KEY(acir, "â", "Â", "âÂ", A, I)
         ACCENTED_KEY(eacu, "é", "É", "éÉ", E, E)
         ACCENTED_KEY(egrv, "è", "È", "èÈ", E, GRAVE)
         ACCENTED_KEY(ecir, "ê", "Ê", "êÊ", E, I)
-        ACCENTED_KEY(iacu, "í", "Í", "íÍ", I, E)
-        ACCENTED_KEY(oacu, "ó", "Ó", "óÓ", O, E)
-        ACCENTED_KEY(otil, "õ", "Õ", "õÕ", O, N)
+        ACCENTED_KEY(etre, "ë", "Ë", "ëË", E, U)
+        ACCENTED_KEY(icir, "î", "Î", "îÎ", I, I)
+        ACCENTED_KEY(itre, "ï", "Ï", "ïÏ", I, U)
+        ACCENTED_KEY(ntil, "ñ", "Ñ", "ñÑ", N, N)
         ACCENTED_KEY(ocir, "ô", "Ô", "ôÔ", O, I)
-        ACCENTED_KEY(uacu, "ú", "Ú", "úÚ", U, E)
+        ACCENTED_KEY(ugrv, "ú", "Ú", "úÚ", U, GRAVE)
+        ACCENTED_KEY(ucir, "û", "Û", "ûÛ", U, I)
 
         ac_ccdi: ac_ccdi {
             wait-ms = <0>;

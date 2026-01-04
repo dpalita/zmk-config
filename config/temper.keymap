@@ -71,15 +71,26 @@
             label = "navigation";
         };
 
-        accents {
+        acute_grave {
             bindings = <
 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &ac_uacu  &trans  &trans
-&ac_agrv  &trans  &trans  &trans  &trans    &trans  &trans  &ac_eacu  &ac_egrv  &trans
+&ac_agrv  &trans  &trans  &trans  &trans    &trans  &trans  &mt &ac_egrv &ac_eacu  &ac_egrv  &trans
 &trans  &trans  &ac_ccdi  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans    &trans  &trans  &trans
             >;
 
-            label = "accents";
+            label = "Acute - Grave";
+        };
+
+        circ {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &ac_ugrv  &trans  &trans
+&ac_agrv  &trans  &trans  &trans  &trans    &trans  &trans  &mt &ac_egrv &ac_eacu  &ac_egrv  &trans
+&trans  &trans  &ac_ccdi  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "Circ";
         };
     };
 };
