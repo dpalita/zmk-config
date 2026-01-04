@@ -3,7 +3,6 @@
         nd_sqt: nd_sqt {
             wait-ms = <0>;
             tap-ms = <0>;
-            label = "`";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap &kp SQT &kp SPACE>;
@@ -11,7 +10,6 @@
         nd_dqt: nd_dqt {
             wait-ms = <0>;
             tap-ms = <0>;
-            label = "`";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap &kp DQT &kp SPACE>;
@@ -19,7 +17,6 @@
         nd_carret: nd_carret {
             wait-ms = <0>;
             tap-ms = <0>;
-            label = "`";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap &kp CARRET &kp SPACE>;
@@ -27,18 +24,9 @@
         nd_grave: nd_grave {
             wait-ms = <0>;
             tap-ms = <0>;
-            label = "`";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap &kp GRAVE &kp SPACE>;
-        };
-        nd_tilde: nd_tilde {
-            wait-ms = <0>;
-            tap-ms = <0>;
-            label = "`";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap &kp TILDE &kp SPACE>;
         };
     };
 };
