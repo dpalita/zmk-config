@@ -2,6 +2,10 @@
 
 &lt { flavor = "balanced"; };
 
+&caps_word {
+  continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>;
+};
+
 / {
     behaviors {
         hml: home_row_mod_left {
