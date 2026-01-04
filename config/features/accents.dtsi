@@ -52,7 +52,7 @@
     #define MACRO_HOLD_TAP(NAME, HOLD_MACRO, TAP_MACRO) \
       ht_##NAME: ht_##NAME { \
         compatible = "zmk,behavior-hold-tap"; \
-        #binding-cells = <0>; \
+        #binding-cells = <2>; \
         flavor= "tap-preferred"; \
         tapping-term-ms = <150>; \
         bindings = <&HOLD_MACRO>, <&TAP_MACRO>; \
@@ -87,15 +87,6 @@
                 , <&macro_release &kp LALT>
                 ;
         };
-        
-        // like &mt but with macros as parameters
-        ac_eacugrv: mmt {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&ac_egrv>, <&ac_eacu>;
-        };
+
     };
 };
