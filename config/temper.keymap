@@ -76,7 +76,7 @@
         circ {
             bindings = <
 &trans    &trans  &trans  &trans  &trans    &trans  &trans  &ac_ucir     &trans       &trans
-&ac_acir  &trans  &trans  &trans  &trans    &trans  &trans  &ht_ecirtre 0 &ht_icirtre 0 &ac_ocir
+&ac_acir  &trans  &trans  &trans  &trans    &trans  &trans  &ht_ecirtre &kp X &ht_icirtre &kp X &ac_ocir
 &trans    &trans  &trans  &trans  &trans    &trans  &trans  &trans       &trans       &trans
                   &trans  &trans  &trans    &trans  &trans  &trans
             >;
