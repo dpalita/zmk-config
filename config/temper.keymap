@@ -73,5 +73,16 @@
 
             label = "Circ";
         };
+
+        aerospace {
+            bindings = <
+&trans  &kp LC(LA(R))  &kp LC(LA(L))  &kp LC(LS(P))  &trans    &kp LC(LA(LS(COMMA)))  &kp LC(LA(LS(N)))  &kp LC(LA(LS(E)))  &kp LC(LA(LS(I)))  &kp LC(LA(LS(O)))
+&trans  LC(LS(S))  &trans  &kp LC(LS(B))  &trans   &kp LC(LA(COMMA))  &kp LC(LS(N))  &kp LC(LS(E))  &kp LC(LS(I))  &kp LC(LS(O))
+&trans    &trans  &trans  &kp LC(LS(D))  &trans    &kp LC(LA(LS(F)))  &kp LC(LA(N))  &kp LC(LA(E))  &kp LC(LA(I))  &kp LC(LA(O))
+                  &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "Aerospace";
+        };
     };
 };
