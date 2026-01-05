@@ -42,7 +42,7 @@
             bindings = <
 &nd_grave  &kp AT         &kp HASH       &nd_dqt        &kp UNDERSCORE    &kp MINUS  &kp N7  &kp N8  &kp N9  &mt BSLH FSLH
 &mt GT LT  &mt RBKT LBKT  &mt RBRC LBRC  &mt RPAR LPAR  &nd_tilde         &kp PLUS   &kp N4  &kp N5  &kp N6  &kp STAR
-&nd_caret  &kp PIPE       &kp AMPS       &mt LA(LS(N5)) DOLLAR     &mt EXCL QMARK    &kp PRCNT  &kp N1  &kp N2  &kp N3  &kp EQUAL
+&nd_caret  &kp PIPE       &kp AMPS       &mt LA(LS(N2)) DOLLAR     &mt EXCL QMARK    &kp PRCNT  &kp N1  &kp N2  &kp N3  &kp EQUAL
                           &trans         &trans         &trans            &trans     &trans  &kp N0
             >;
 
