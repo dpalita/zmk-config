@@ -14,6 +14,15 @@
 #include "features/symbols.dtsi"
 
 / {
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <SYMBOLS NAVIGATION>;
+            then-layer = <AEROSPACE>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -21,7 +30,7 @@
             bindings = <
 &kp Q                   &kp W        &kp L            &kp P              &kp B      &kp J    &kp F                &kp U         &kp Y        &nd_sqt
 &hml LCTRL A            &hml LALT S  &hml LSHFT R     &hml LCMD T        &kp G      &kp M    &hmr RCMD N          &hmr RSHFT E  &hmr RALT I  &hmr RCTRL O
-&lt AEROSPACE Z         &kp X        &kp C            &kp D              &kp V      &kp K    &kp H                &kp COMMA     &kp DOT      &mt SEMI COLON
+&kp Z         &kp X        &kp C            &kp D              &kp V      &kp K    &kp H                &kp COMMA     &kp DOT      &mt SEMI COLON
                            &lt ACCENTS LG(C)  &lt SYMBOLS SPACE  &kp TAB    &kp RET  &lt NAVIGATION BSPC  &lt CIRC LG(V)
             >;
 
@@ -77,8 +86,8 @@
 
         aerospace {
             bindings = <
-&trans  &kp LC(LA(R))  &kp LC(LA(L))  &kp LC(LS(P))  &trans    &kp LC(LA(LS(COMMA)))  &kp LC(LA(LS(N)))  &kp LC(LA(LS(E)))  &kp LC(LA(LS(I)))  &kp LC(LA(LS(O)))
-&trans  &kp LC(LS(S))  &trans  &kp LC(LS(B))  &trans   &kp LC(LA(COMMA))  &kp LC(LS(N))  &kp LC(LS(E))  &kp LC(LS(I))  &kp LC(LS(O))
+&trans  &kp LC(LA(R))  &kp LC(LA(L))  &kp LC(LS(P))  &trans    &kp LC(LA(LS(A)))  &kp LC(LA(LS(N)))  &kp LC(LA(LS(E)))  &kp LC(LA(LS(I)))  &kp LC(LA(LS(O)))
+&trans  &kp LC(LS(S))  &kp LALT  &kp LC(LS(B))  &trans   &kp LC(LA(LS(T)))  &kp LC(LS(N))  &kp LC(LS(E))  &kp LC(LS(I))  &kp LC(LS(O))
 &trans    &trans  &trans  &kp LC(LS(D))  &trans    &kp LC(LA(LS(F)))  &kp LC(LA(N))  &kp LC(LA(E))  &kp LC(LA(I))  &kp LC(LA(O))
                   &trans  &trans  &trans    &trans  &trans  &trans
             >;
