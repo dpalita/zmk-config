@@ -7,6 +7,7 @@
 #define NAVIGATION 2
 #define ACCENTS 3
 #define CIRC 4
+#define AEROSPACE 5
 
 #include "features/behaviors.dtsi"
 #include "features/accents.dtsi"
@@ -20,8 +21,8 @@
             bindings = <
 &kp Q         &kp W        &kp L            &kp P              &kp B      &kp J    &kp F                &kp U         &kp Y        &nd_sqt
 &hml LCTRL A  &hml LALT S  &hml LSHFT R     &hml LCMD T        &kp G      &kp M    &hmr RCMD N          &hmr RSHFT E  &hmr RALT I  &hmr RCTRL O
-&kp Z         &kp X        &kp C            &kp D              &kp V      &kp K    &kp H                &kp COMMA     &kp DOT      &kp COLON
-                           &lt ACCENTS ESC  &lt SYMBOLS SPACE  &kp TAB    &kp RET  &lt NAVIGATION BSPC  &mo CIRC
+&lt AEROSPACE Z         &kp X        &kp C            &kp D              &kp V      &kp K    &kp H                &kp COMMA     &kp DOT      &kp COLON
+                           &lt ACCENTS LG(C)  &lt SYMBOLS SPACE  &kp TAB    &kp RET  &lt NAVIGATION BSPC  &lt CIRC LG(V)
             >;
 
             display-name = "base";
@@ -43,7 +44,7 @@
         navigation {
             bindings = <
 &bt BT_NXT      &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &trans    &none       &kp LG(LEFT)  &kp PAGE_UP  &kp PAGE_DOWN  &kp LG(RIGHT)
-&bootloader     &trans        &trans        &trans      &trans    &caps_word  &kp LEFT      &kp DOWN     &kp UP         &kp RIGHT
+&bootloader     &trans        &trans        &kp ESC      &trans    &caps_word  &kp LEFT      &kp DOWN     &kp UP         &kp RIGHT
 &studio_unlock  &trans        &trans        &trans      &trans    &trans      &trans        &trans       &trans         &trans
                               &trans        &trans      &trans    &trans      &trans        &trans
             >;
