@@ -19,9 +19,9 @@
 
         base {
             bindings = <
-&kp Q         &kp W        &kp L            &kp P              &kp B      &kp J    &kp F                &kp U         &kp Y        &nd_sqt
-&hml LCTRL A  &hml LALT S  &hml LSHFT R     &hml LCMD T        &kp G      &kp M    &hmr RCMD N          &hmr RSHFT E  &hmr RALT I  &hmr RCTRL O
-&lt AEROSPACE Z         &kp X        &kp C            &kp D              &kp V      &kp K    &kp H                &kp COMMA     &kp DOT      &kp COLON
+&kp Q                   &kp W        &kp L            &kp P              &kp B      &kp J    &kp F                &kp U         &kp Y        &nd_sqt
+&hml LCTRL A            &hml LALT S  &hml LSHFT R     &hml LCMD T        &kp G      &kp M    &hmr RCMD N          &hmr RSHFT E  &hmr RALT I  &hmr RCTRL O
+&lt AEROSPACE Z         &kp X        &kp C            &kp D              &kp V      &kp K    &kp H                &kp COMMA     &kp DOT      &mt SEMI COLON
                            &lt ACCENTS LG(C)  &lt SYMBOLS SPACE  &kp TAB    &kp RET  &lt NAVIGATION BSPC  &lt CIRC LG(V)
             >;
 
@@ -31,9 +31,9 @@
 
         symbols {
             bindings = <
-&kp SEMI   &kp AT         &kp HASH       &nd_dqt        &kp UNDERSCORE    &kp MINUS  &kp N7  &kp N8  &kp N9  &kp FSLH
-&mt GT LT  &mt RBKT LBKT  &mt RBRC LBRC  &mt RPAR LPAR  &mt BSLH SLASH    &kp PLUS   &kp N4  &kp N5  &kp N6  &kp STAR
-&nd_caret  &kp PIPE       &kp AMPS       &kp DOLLAR     &kp EXCL          &kp PRCNT  &kp N1  &kp N2  &kp N3  &kp EQUAL
+&nd_grave  &kp AT         &kp HASH       &nd_dqt        &kp UNDERSCORE    &kp MINUS  &kp N7  &kp N8  &kp N9  &mt BSLH FSLH
+&mt GT LT  &mt RBKT LBKT  &mt RBRC LBRC  &mt RPAR LPAR  &nd_tilde         &kp PLUS   &kp N4  &kp N5  &kp N6  &kp STAR
+&nd_caret  &kp PIPE       &kp AMPS       &kp DOLLAR     &mt EXCL QMARK    &kp PRCNT  &kp N1  &kp N2  &kp N3  &kp EQUAL
                           &trans         &trans         &trans            &trans     &trans  &kp N0
             >;
 
@@ -44,7 +44,7 @@
         navigation {
             bindings = <
 &bt BT_NXT      &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &trans    &none       &kp LG(LEFT)  &kp PAGE_UP  &kp PAGE_DOWN  &kp LG(RIGHT)
-&bootloader     &trans        &trans        &kp ESC      &trans    &caps_word  &kp LEFT      &kp DOWN     &kp UP         &kp RIGHT
+&bootloader     &trans        &trans        &kp ESC     &trans    &caps_word  &kp LEFT      &kp DOWN     &kp UP         &kp RIGHT
 &studio_unlock  &trans        &trans        &trans      &trans    &trans      &trans        &trans       &trans         &trans
                               &trans        &trans      &trans    &trans      &trans        &trans
             >;
