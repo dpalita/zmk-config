@@ -52,10 +52,10 @@
 
         navigation {
             bindings = <
-&bt BT_NXT      &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &trans               &none       &kp LG(LEFT)  &kp PAGE_UP  &kp PAGE_DOWN  &kp LG(RIGHT)
-&bootloader     &trans        &trans        &kp ESC     &trans               &caps_word  &kp LEFT      &kp DOWN     &kp UP         &kp RIGHT
-&studio_unlock  &trans        &trans        &trans      &kp LC(LA(SPACE))    &trans      &trans        &trans       &trans         &trans
-                              &trans        &trans      &trans               &trans      &trans        &trans
+&bt BT_NXT      &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &trans               &none               &kp LG(LEFT)  &kp PAGE_UP  &kp PAGE_DOWN  &kp LG(RIGHT)
+&bootloader     &trans        &trans        &kp ESC     &trans               &caps_word          &kp LEFT      &kp DOWN     &kp UP         &kp RIGHT
+&studio_unlock  &trans        &trans        &trans      &kp LC(LA(SPACE))    &kp LG(LS(N4))      &trans        &trans       &trans         &trans
+                              &trans        &trans      &trans               &trans              &trans        &trans
             >;
 
             display-name = "navigation";
@@ -66,7 +66,7 @@
             bindings = <
 &trans    &trans  &trans    &trans  &trans    &trans  &trans    &ac_ugrv     &trans  &trans
 &ac_agrv  &trans  &trans    &trans  &trans    &trans  &ac_ntil  &ht_eacugrv  &trans  &trans
-&trans    &trans  &ac_ccdi  &trans  &trans    &trans  &trans    &trans       &trans  &trans
+&trans    &trans  &trans   &trans   &ac_ccdi  &trans  &trans    &trans       &trans  &trans
                   &trans    &trans  &trans    &trans  &trans    &trans
             >;
 
