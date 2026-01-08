@@ -8,6 +8,7 @@
 #define ACCENTS 3
 #define CIRC 4
 #define AEROSPACE 5
+#define ADMIN 6
 
 #include "features/behaviors.dtsi"
 #include "features/accents.dtsi"
@@ -17,9 +18,13 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        tri_layer {
+        aerospace {
             if-layers = <SYMBOLS NAVIGATION>;
             then-layer = <AEROSPACE>;
+        };
+        admin {
+            if-layers = <ACCENTS CIRC>;
+            then-layer = <ADMIN>;
         };
     };
 
@@ -34,7 +39,6 @@
                            &lt ACCENTS LG(C)  &lt SYMBOLS SPACE  &kp TAB    &kp RET  &lt NAVIGATION BSPC  &lt CIRC LG(V)
             >;
 
-            display-name = "base";
             label = "base";
         };
 
@@ -46,19 +50,17 @@
                           &trans         &trans                 &trans            &trans     &trans  &kp N0
             >;
 
-            display-name = "symbols";
             label = "symbols";
         };
 
         navigation {
             bindings = <
-&bt BT_NXT      &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &trans               &none               &kp LG(LEFT)  &kp PAGE_UP  &kp PAGE_DOWN  &kp LG(RIGHT)
-&bootloader     &trans        &trans        &kp ESC     &trans               &caps_word          &kp LEFT      &kp DOWN     &kp UP         &kp RIGHT
-&studio_unlock  &trans        &trans        &trans      &kp LC(LA(SPACE))    &kp LG(LS(N4))      &trans        &trans       &trans         &trans
+&trans     &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &trans               &none               &kp LG(LEFT)  &kp PAGE_UP  &kp PAGE_DOWN  &kp LG(RIGHT)
+&trans     &trans        &trans        &kp ESC     &trans               &caps_word          &kp LEFT      &kp DOWN     &kp UP         &kp RIGHT
+&trans     &trans        &trans        &trans      &kp LC(LA(SPACE))    &kp LG(LS(N4))      &trans        &trans       &trans         &trans
                               &trans        &trans      &trans               &trans              &trans        &trans
             >;
 
-            display-name = "navigation";
             label = "navigation";
         };
 
@@ -93,6 +95,17 @@
             >;
 
             label = "Aerospace";
+        };
+
+        admin {
+            bindings = <
+&bt BT_NXT      &trans        &trans        &trans      &trans               &trans              &trans        &trans       &trans         &trans
+&bootloader     &trans        &trans        &trans      &trans               &trans              &trans        &trans       &trans         &trans
+&studio_unlock  &trans        &trans        &trans      &trans               &trans              &trans        &trans       &trans         &trans
+                              &trans        &trans      &trans               &trans              &trans        &trans
+            >;
+
+            label = "admin";
         };
     };
 };
