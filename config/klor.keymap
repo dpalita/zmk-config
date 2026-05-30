@@ -29,7 +29,7 @@
 
             label = "base";
         };
-`
+
         symbols {
             bindings = <
         &nd_grave  &kp AT         &kp HASH       &nd_dqt                &kp UNDERSCORE                             &kp MINUS  &kp N7     &kp N8  &kp N9  &mt BSLH FSLH
@@ -59,7 +59,9 @@
 &trans  &trans    &trans  &trans   &trans   &ac_ccdi   &trans                                           &trans   &trans  &trans    &trans       &trans  &trans  &trans
                           &trans    &trans  &trans     &trans                                           &trans   &trans  &trans    &trans
             >;
+        };
 
+        circ {
             label = "Accents";
         
             bindings = <
